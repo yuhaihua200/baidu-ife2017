@@ -74,5 +74,58 @@
        <li>排名2</li>
        <li>排名3</li>
    </ol>
+   <table border="1">
+       <div>下面是一个表格,给表格加了一个border="1"好让你看出是一个表格</div>
+       <thead>
+       <tr>
+           <th>表头</th>
+           <th>表头</th>
+           <th>表头</th>
+       </tr>
+       </thead>
+       <tbody>
+        <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="#">操作</a></td>
+        </tr>
+        <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="#">操作</a></td>
+        </tr>
+        <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="#">操作</a></td>
+        </tr>
+       </tbody>
+       <tfoot>
+       <tr>
+           <td>总计</td>
+           <td colspan="2">1000</td><!--跨2列-->
+       </tr>
+       </tfoot>
+   </table>
+   <h2>这里以后是一个侧栏,这是侧栏的标题</h2>
+   <h2>侧栏注册窗口标题</h2>
+    <form action="#">
+        <label for="email">请输入邮箱地址</label>:<input type="email" name="email" id="email" value="这是一个文本框"><br>
+        <div>邮箱地址请按要求格式输入</div>
+        <label for="pwd1">请输入密码:</label><input type="password" name="pwd"  id="pwd1" value="这是一个文本框"><label for="pwd2">请重复输入密码:</label><input type="password" id="pwd2" value="这是一个文本框">
+        <div>密码请为6-16位英文数字</div>
+        性别:<input type="radio" id="male" name="sex"><label for="male">男</label>
+        <input type="radio" id="female" name="sex"><label for="female">女</label>
+        <select name="city" id="city">
+            <option value="bj">北京</option>
+            <option value="sh">上海</option>
+        </select>
+        爱好:<input type="checkbox" id="sport"><label for="sport">运动</label>
+        <input type="checkbox" id="act"><label for="act">艺术</label>
+        <input type="checkbox" id="science"><label for="science">科学</label>
+        <label for="personal">个人描述:</label><textarea name="personal" id="personal" cols="20" rows="2">这是一个多行输入框,输入你的个人描述</textarea><input
+            type="submit" value="确认提交">
+    </form>
+    <div>版权所有&copy;</div>
 </body>
 </html>
