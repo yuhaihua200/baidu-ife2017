@@ -38,7 +38,7 @@
         p{text-indent: 2em;
             line-height: 30px;
             font-size: 15px;}
-        .article li{list-style-type: none;}
+        .article ul li{list-style-type: none;}
         dl{width: 120px;
             height: 130px;
             margin-left: 60px;
@@ -47,6 +47,15 @@
         dl img{width: 100px;
             height: 80px;}
         dd{margin: 10px;}
+        table{width: 100%;
+            border-collapse: collapse;
+            font-size: 10px;
+            border-color: #CCC;}
+        thead{color: #FFF;
+            text-align: left;
+            background-color: #333;}
+        tfoot{font-weight: bold;
+            background-color: #CCC;}
     </style>
 </head>
 <body>
@@ -135,47 +144,49 @@
         <dd><img src="123.png" alt="123"></dd>
     </dl>
    </div>
-   <h2>最后一篇文章的一级标题</h2>
-   <h2>文章二级标题</h2>
-   <span>文章作者</span> <span>文章发表时间</span>
-   <ol>
-       <li>排名1</li>
-       <li>排名2</li>
-       <li>排名3</li>
-   </ol>
-   <table border="1">
-       <div>下面是一个表格,给表格加了一个border="1"好让你看出是一个表格</div>
-       <thead>
-       <tr>
-           <th>表头</th>
-           <th>表头</th>
-           <th>表头</th>
-       </tr>
-       </thead>
-       <tbody>
-        <tr>
-            <td>表内容单元格</td>
-            <td>表内容单元格</td>
-            <td><a href="#">操作</a></td>
-        </tr>
-        <tr>
-            <td>表内容单元格</td>
-            <td>表内容单元格</td>
-            <td><a href="#">操作</a></td>
-        </tr>
-        <tr>
-            <td>表内容单元格</td>
-            <td>表内容单元格</td>
-            <td><a href="#">操作</a></td>
-        </tr>
-       </tbody>
-       <tfoot>
-       <tr>
-           <td>总计</td>
-           <td colspan="2">1000</td><!--跨2列-->
-       </tr>
-       </tfoot>
-   </table>
+    <div class="article">
+    <h1>最后一篇文章的一级标题</h1>
+    <h2>文章二级标题</h2>
+    <div class="message"><span>文章作者</span> <span>文章发表时间</span></div>
+        <ol>
+           <li>排名1</li>
+           <li>排名2</li>
+           <li>排名3</li>
+        </ol>
+       <table border="1">
+           <div>下面是一个表格,给表格加了一个border="1"好让你看出是一个表格,你们不用写html的时候不需要加</div>
+           <thead>
+           <tr>
+               <th>表头</th>
+               <th>表头</th>
+               <th>表头</th>
+           </tr>
+           </thead>
+           <tbody>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+           </tbody>
+           <tfoot>
+           <tr>
+               <td>总计</td>
+               <td colspan="2">1000</td><!--跨2列-->
+           </tr>
+           </tfoot>
+    </table>
+    </div>
    <h2>这里以后是一个侧栏,这是侧栏的标题</h2>
    <h2>侧栏注册窗口标题</h2>
     <form action="#">
