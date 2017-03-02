@@ -56,6 +56,38 @@
             background-color: #333;}
         tfoot{font-weight: bold;
             background-color: #CCC;}
+        .article ol{margin-bottom: 25px;}
+        .side{border-left: 3px solid #CCC;
+            padding: 10px;
+            font-size: 15px;
+            color: #333;}
+        .left-margin{margin-left: 290px;}
+        .right-form{width: 330px;}
+        .note{margin-bottom: 30px;
+            text-align: right;
+            font-size: 12px;
+            color: #A9AEB4;}
+        form label,input{margin-bottom: 10px;}
+        label{display: inline-block;
+            width: 112px;
+            text-align: right;
+            margin-right: 15px;}
+        .no-block{display: inline;}
+        .ts{float: left;}/*浮动会把文字与框对齐*/
+        .buttom{border: 0;
+            border-radius: 5px;
+            width: 100%;
+            height: 40px;
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #FFF;
+            background-color: #3355D0;}
+        .foot{height: 70px;
+            background-color: #000;
+            text-align: center;}
+        .copyright{color: #FFF;
+            line-height: 70px;}
     </style>
 </head>
 <body>
@@ -187,25 +219,34 @@
            </tfoot>
     </table>
     </div>
-   <h2>这里以后是一个侧栏,这是侧栏的标题</h2>
-   <h2>侧栏注册窗口标题</h2>
+    <div class="article">
+   <h2 class="side">这里以后是一个侧栏,这是侧栏的标题</h2>
     <form action="#">
-        <label for="email">请输入邮箱地址</label>:<input type="email" name="email" id="email" value="这是一个文本框"><br>
-        <div>邮箱地址请按要求格式输入</div>
-        <label for="pwd1">请输入密码:</label><input type="password" name="pwd"  id="pwd1" value="这是一个文本框"><label for="pwd2">请重复输入密码:</label><input type="password" id="pwd2" value="这是一个文本框">
-        <div>密码请为6-16位英文数字</div>
-        性别:<input type="radio" id="male" name="sex"><label for="male">男</label>
-        <input type="radio" id="female" name="sex"><label for="female">女</label>
+    <div class="left-margin">
+    <div class="right-form">
+    <label for="email">请输入邮箱地址</label><input type="email" name="email" id="email" value="这是一个文本框"><br>
+        <div class="note">邮箱地址请按要求格式输入</div>
+        <label for="pwd1">请输入密码</label><input type="password" name="pwd"  id="pwd1" value="这是一个文本框"><br>
+        <label for="pwd2">请重复输入密码</label><input type="password" id="pwd2" value="这是一个文本框">
+        <div class="note">密码请为6-16位英文数字</div>
+        <label>性别</label><input type="radio" id="male" name="sex"><label for="male" class="no-block">男</label>
+        <input type="radio" id="female" name="sex"><label for="female" class="no-block">女</label><br>
+        <label for="city">城市</label>
         <select name="city" id="city">
             <option value="bj">北京</option>
             <option value="sh">上海</option>
-        </select>
-        爱好:<input type="checkbox" id="sport"><label for="sport">运动</label>
-        <input type="checkbox" id="act"><label for="act">艺术</label>
-        <input type="checkbox" id="science"><label for="science">科学</label>
-        <label for="personal">个人描述:</label><textarea name="personal" id="personal" cols="20" rows="2">这是一个多行输入框,输入你的个人描述</textarea><input
-            type="submit" value="确认提交">
+        </select><br>
+        <label>爱好</label><input type="checkbox" id="sport"><label for="sport" class="no-block">运动</label>
+        <input type="checkbox" id="act"><label for="act" class="no-block">艺术</label>
+        <input type="checkbox" id="science"><label for="science" class="no-block">科学</label><br>
+    </div>
+    <label for="personal" class="ts">个人描述</label><textarea name="personal" id="personal" cols="100" rows="5">这是一个多行输入框,输入你的个人描述</textarea><br>
+    </div>
+    <input type="submit" value="确认提交" class="buttom">
     </form>
-    <div>版权所有&copy;</div>
+    </div>
+    <div class="foot">
+    <div class="copyright">版权所有&copy;</div>
+    </div>
 </body>
 </html>
