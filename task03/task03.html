@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务三:三栏式布局</title>
+    <style type="text/css">
+        *{margin: 0;
+        padding: 0;
+        box-sizing: border-box;}
+        /*.clearfix{clear: both;}*//*清除浮动方法一*/
+        .clearfix:after{
+            content: "020";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;}
+        .clearfix {zoom: 1;}
+        .box{margin: 20px;
+        border: 1px solid #999;
+        padding: 20px;
+        position: relative;
+        background-color: #EEE;}
+        .team-box{width: 200px;
+        padding: 20px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        border: 1px solid #999;
+        background-color: #FFF;}
+        .team img{width: 80px;
+        height: 80px;
+        margin-right: 20px;
+        float: left;
+        background-color: #EEE;}
+        .introduction{margin-left: 220px;
+        margin-right: 140px;
+        padding: 20px;
+        border: 1px solid #999;
+        background-color: #FFF;}
+        .logo-box{width: 120px;
+        padding: 20px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        text-align: center;
+        border: 1px solid #999;
+        background-color: #FFF;}
+        li{list-style-type: none;}
+        li~li{padding-top: 20px;}
+        .logo-box img{width: 80px;
+            height: 80px;
+            background-color: #EEE;}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="team-box">
+            <div class="team 123.jpglearfix">
+                <img src="123.jpg" alt="团队logo">
+                <p>Trump</p>
+            </div>
+            <!--<div class="clearfix"></div>--><!--清除浮动方法一-->
+        </div>
+        <div class="introduction">
+            <p>Donald John Trump (born June 14, 1946) is an American businessman and the President-elect of the United States. He is scheduled to take office as the 45th President on January 20, 2017. As the Republican Party's nominee for president in the 2016 election, he defeated Hillary Clinton in the general election on November 8, 2016.</p>
+            <p>Trump is currently the chairman and president of The Trump Organization, the principal holding company for his real estate ventures and other business interests – a position he has said he will vacate prior to his assumption of the presidency. During his career, Trump has built office towers, hotels, casinos, golf courses, and other branded facilities worldwide.</p>
+            <p>Trump was born and raised in New York City and received a bachelor's degree in economics from the Wharton School of the University of Pennsylvania in 1968. In 1971 he was given control of his father Fred Trump's real estate and construction firm and later renamed it The Trump Organization, rising to public prominence shortly thereafter. Trump has appeared at the Miss USA pageants, which he owned from 1996 to 2015, and has made cameo appearances in films and television series. He sought the Reform Party presidential nomination in 2000, but withdrew before voting began. He hosted and co-produced The Apprentice, a reality television series on NBC, from 2004 to 2015. As of 2016, he was listed by Forbes as the 324th wealthiest person in the world, and 156th in the United States.</p>
+            <p>In June 2015, Trump announced his candidacy for president as a Republican and quickly emerged as the front-runner for his party's nomination. In May 2016, his remaining Republican rivals suspended their campaigns, and in July he was formally nominated for president at the 2016 Republican National Convention. Trump's campaign has received unprecedented media coverage and international attention. Many of his statements in interviews, on Twitter, and at campaign rallies have been controversial or false. Several rallies during the primaries were accompanied by protests or riots. On October 7, a 2005 audio recording surfaced in which Trump bragged that fame made women amenable to kissing and groping; multiple women accused him of forcibly doing so shortly thereafter.[3][4] He apologized for the 2005 comments and denied the allegations, describing them as part of a wider smear campaign.</p>
+            <p>Trump's platform included renegotiation of U.S.–China trade deals, opposition to particular trade agreements such as NAFTA and the Trans-Pacific Partnership, stronger enforcement of immigration laws together with building a wall along the U.S.–Mexico border, reform of veterans' care, repeal and replacement of the Affordable Care Act, and tax cuts. Following the November 2015 Paris attacks, Trump called for a temporary ban on Muslim immigration to the United States, later stating that the ban would focus instead on countries with a proven history of terrorism, until the screening for potential terrorists is improved. He will be the oldest person to ever become a first-term president, at the age of 70, surpassing Ronald Reagan who was 69 years of age upon winning the 1980 election.</p>
+        </div>
+        <div class="logo-box">
+            <ul>
+                <li><img src="123.jpg" alt="个人logo"></li>
+                <li><img src="123.jpg" alt="个人logo"></li>
+                <li><img src="123.jpg" alt="个人logo"></li>
+                <li><img src="123.jpg" alt="个人logo"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
